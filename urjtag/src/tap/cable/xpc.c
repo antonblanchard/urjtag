@@ -704,7 +704,7 @@ const urj_cable_driver_t urj_tap_cable_xpc_int_driver = {
     urj_tap_cable_generic_flush_using_transfer,
     urj_tap_cable_generic_usbconn_help
 };
-URJ_DECLARE_USBCONN_CABLE(0x03FD, 0x0008, "libusb", "xpc_int", xpc_int, NULL)
+URJ_DECLARE_USBCONN_CABLE(0x03FD, 0x0008, "libusb", "xpc_int", xpc_int, NULL, 0)
 
 const urj_cable_driver_t urj_tap_cable_xpc_ext_driver = {
     "xpc_ext",
@@ -724,4 +724,4 @@ const urj_cable_driver_t urj_tap_cable_xpc_ext_driver = {
     urj_tap_cable_generic_flush_using_transfer,
     urj_tap_cable_generic_usbconn_help
 };
-URJ_DECLARE_USBCONN_CABLE(0x03FD, 0x0008, "libusb", "xpc_ext", xpc_ext, NULL)
+URJ_DECLARE_USBCONN_CABLE(0x03FD, 0x0008, "libusb", "xpc_ext", xpc_ext, NULL, 0)

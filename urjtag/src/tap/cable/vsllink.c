@@ -575,4 +575,4 @@ const urj_cable_driver_t urj_tap_cable_vsllink_driver = {
     urj_tap_cable_generic_flush_using_transfer,
     urj_tap_cable_generic_usbconn_help
 };
-URJ_DECLARE_USBCONN_CABLE (0x0483, 0x5740, "libusb", "vsllink", vsllink, NULL)
+URJ_DECLARE_USBCONN_CABLE (0x0483, 0x5740, "libusb", "vsllink", vsllink, NULL, 0)

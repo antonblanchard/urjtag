@@ -515,7 +515,7 @@ const urj_cable_driver_t urj_tap_cable_usbblaster_driver = {
     usbblaster_flush,
     ftdx_usbcable_help
 };
-URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6001, "", "UsbBlaster", usbblaster, NULL)
-URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6002, "", "UsbBlaster", cubic_cyclonium, NULL)
-URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6003, "", "UsbBlaster", nios_eval, NULL)
-URJ_DECLARE_FTDX_CABLE(0x16C0, 0x06AD, "", "UsbBlaster", usb_jtag, NULL)
+URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6001, "", "UsbBlaster", usbblaster, NULL, 0)
+URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6002, "", "UsbBlaster", cubic_cyclonium, NULL, 0)
+URJ_DECLARE_FTDX_CABLE(0x09FB, 0x6003, "", "UsbBlaster", nios_eval, NULL, 0)
+URJ_DECLARE_FTDX_CABLE(0x16C0, 0x06AD, "", "UsbBlaster", usb_jtag, NULL, 0)
