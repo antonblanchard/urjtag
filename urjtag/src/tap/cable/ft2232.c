@@ -2811,7 +2811,7 @@ const urj_cable_driver_t urj_tap_cable_ft2232_flyswatter_driver = {
     ft2232_flush,
     ftdx_usbcable_help
 };
-URJ_DECLARE_FTDX_CABLE(0x0403, 0x6010, "-mpsse", "Flyswatter", flyswatter, NULL)
+URJ_DECLARE_FTDX_CABLE(0x0403, 0x6010, "-mpsse", "Flyswatter", flyswatter, "Flyswatter")
 
 const urj_cable_driver_t urj_tap_cable_ft2232_usbscarab2_driver = {
     "usbScarab2",
@@ -2891,7 +2891,27 @@ const urj_cable_driver_t urj_tap_cable_ft2232_digilenths1_driver = {
     ft2232_flush,
     ftdx_usbcable_help
 };
-URJ_DECLARE_FTDX_CABLE(0x0403, 0x6010, "-mpsse", "DigilentHS1", digilenths1, NULL)
+URJ_DECLARE_FTDX_CABLE(0x0403, 0x6010, "-mpsse", "DigilentHS1", digilenths1, "Digilent Adept USB Device")
+
+const urj_cable_driver_t urj_tap_cable_ft2232_digilentnexysvideo_driver = {
+    "DigilentNexysVideo",
+    N_("Digilent Nexys Video Adapter"),
+    URJ_CABLE_DEVICE_USB,
+    { .usb = ft2232_connect, },
+    urj_tap_cable_generic_disconnect,
+    ft2232_cable_free,
+    ft2232_digilenths1_init,
+    ft2232_generic_done,
+    ft2232_set_frequency,
+    ft2232_clock,
+    ft2232_get_tdo,
+    ft2232_transfer,
+    ft2232_set_signal,
+    urj_tap_cable_generic_get_signal,
+    ft2232_flush,
+    ftdx_usbcable_help
+};
+URJ_DECLARE_FTDX_CABLE(0x0403, 0x6010, "-mpsse", "DigilentNexysVideo", digilentnexysvideo, "Digilent USB Device")
 
 const urj_cable_driver_t urj_tap_cable_ft2232_ft4232_driver = {
     "FT4232",
