@@ -338,4 +338,4 @@ const urj_cable_driver_t urj_tap_cable_dirtyjtag_driver = {
   urj_tap_cable_generic_flush_using_transfer,
   urj_tap_cable_generic_usbconn_help
 };
-URJ_DECLARE_USBCONN_CABLE(0x1209, 0xC0CA, "libusb", "dirtyjtag", dirtyjtag)
+URJ_DECLARE_USBCONN_CABLE(0x1209, 0xC0CA, "libusb", "dirtyjtag", dirtyjtag, NULL)

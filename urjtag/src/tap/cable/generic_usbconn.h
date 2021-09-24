@@ -51,7 +51,7 @@ void urj_tap_cable_generic_usbconn_help_ex (urj_log_level_t ll, const char *cabl
     "INTERFACE  Interface to use (0=first, 1=second, etc).\n" \
     "INDEX      Number of matching device (0=first, 1=second, etc).\n"
 
-#define URJ_DECLARE_USBCONN_CABLE(vid, pid, driver, name, cable) \
-const urj_usbconn_cable_t urj_tap_cable_usbconn_##cable = { name, NULL, driver, vid, pid };
+#define URJ_DECLARE_USBCONN_CABLE(vid, pid, driver, name, cable, desc) \
+const urj_usbconn_cable_t urj_tap_cable_usbconn_##cable = { name, desc, driver, vid, pid };
 
 #endif /* URJ_TAP_CABLE_GENERIC_H */
